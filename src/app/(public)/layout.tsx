@@ -2,7 +2,20 @@ import type { Metadata } from "next";
 import Header from "@/app/components/Header"
 import Footer from "@/app/components/Footer"
 import localFont from "next/font/local";
+import { Poppins } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "@/app/globals.css";
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400','700','900'],
+  variable: '--font-roboto'
+})
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: '800',
+  variable: '--font-poppins'
+})
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -28,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${roboto.variable} antialiased`}
       >
         <Header/>
         {children}

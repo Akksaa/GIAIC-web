@@ -8,18 +8,18 @@ import { AiOutlineMail } from 'react-icons/ai';
 
 function Footer() {
   return (
-    <div className='bg-gray-200 p-20 w-full mt-10 gap-36 flex justify-start'>
-      <div className=''>
-        <h3 className='font-semibold tracking-wide text-xl'>Core Courses</h3>
-        <ul className='mt-4 text-md gap-6 cursor-pointer' >
+    <div className='bg-gray-200 p-8 roboto md:p-20 w-full mt-10 gap-16 md:flex justify-start flex-wrap'>
+      <div className='mb-6 sm:mb-0'>
+        <h3 className='font-semibold tracking-wide text-lg md:text-2xl'>Core Courses</h3>
+        <ul className=' mt-2 md:mt-4 text-sm md:text-xl gap-6 cursor-pointer' >
           <li className='mb-2 hover:text-sky-800 transition-colors'>Programming Fundamentals</li>
           <li className='mb-2 hover:text-sky-800 transition-colors'>Web2 Using NextJs</li>
           <li className='hover:text-sky-800 transition-colors'>Earn as You Learn</li>
         </ul>
       </div>
-      <div>
-        <p className='font-semibold text-xl tracking-wide'>Advanced Courses</p>
-        <ul className='mt-4 text-md cursor-pointer'>
+      <div className='mb-6 sm:mb-0'>
+        <p className='font-semibold text-lg md:text-2xl tracking-wide'>Advanced Courses</p>
+        <ul className='mt-2 md:mt-4 text-sm md:text-xl cursor-pointer'>
           <li className='mb-2 hover:text-sky-800 transition-colors'>Web3 And Metaverse</li>
           <li className='mb-2 hover:text-sky-800 transition-colors'>Cloud-Native Computing</li>
           <li className='mb-2 hover:text-sky-800 transition-colors'>Artificial Intelligence (AI) and Deep Learning</li>
@@ -28,9 +28,9 @@ function Footer() {
           <li className='hover:text-sky-800 transition-colors'>Network Programmability and Automation</li>
         </ul>
       </div>
-      <div>
-        <p className='font-semibold text-xl tracking-wide'>Social Links</p>
-        <ul className='flex text-3xl mt-4 gap-2 cursor-pointer'>
+      <div className=''>
+        <p className='font-semibold text-lg md:text-2xl tracking-wide'>Social Links</p>
+        <ul className='flex mt-2 md:mt-4 text-lg md:text-4xl md:gap-2 cursor-pointer'>
           <li> <AiFillFacebook/> </li>
           <li> <AiFillYoutube/> </li>
           <li> <AiFillSkype/> </li>
@@ -38,8 +38,8 @@ function Footer() {
           <li> <AiFillTikTok/> </li>
         </ul>
         <ul className='flex gap-2 items-end text-sky-800 cursor-pointer'>
-          <li className='text-2xl mt-4'> <AiOutlineMail/></li>
-          <li className='underline'> education@governorsindh.com</li>
+          <li className=' text-lg md:text-2xl mt-4'> <AiOutlineMail/></li>
+          <li className='underline text-sm md:text-lg'> education@governorsindh.com</li>
         </ul>
         
 
