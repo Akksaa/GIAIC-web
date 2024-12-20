@@ -13,10 +13,9 @@
 
 
 .wrapper {
-    max-height: 600px;
+    max-height: 700px;
     display: flex;
     overflow-x: auto;
-    border-bottom: 1px solid gray;
     padding-bottom: 40px;
     grid-column: auto;
     gap: 12px; 
@@ -56,7 +55,7 @@
     }
 
     .wrapper .item {
-        max-width: 640px;
+        max-width: 440px;
         height: 320px;
         line-height: 360px;
     }
